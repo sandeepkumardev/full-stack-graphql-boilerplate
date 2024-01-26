@@ -1,3 +1,5 @@
+import Domain from "../models";
+
 const books = [
   {
     title: "The Awakening",
@@ -11,7 +13,11 @@ const books = [
 
 const resolvers = {
   Query: {
-    books: () => books,
+    books: async () => {
+      const domains = await Domain.findAll();
+      console.log(domains);
+      return books;
+    },
   },
 };
 
