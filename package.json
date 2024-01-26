@@ -1,5 +1,5 @@
 {
-  "name": "password-finder",
+  "name": "full-stack-graphql-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "client": "cd ./client && npm run start",
