@@ -1,11 +1,9 @@
-import express from 'express';
-import middleware from './middleware';
+import { ApolloServer } from "apollo-server";
+import resolvers from "./resolvers";
+import typeDefs from "./typeDefs";
 
-const app = express();
-const PORT = 5050;
+const server = new ApolloServer({ typeDefs, resolvers });
 
-app.use(middleware)
-
-app.listen(PORT, () => {
-    console.log("Server is running!")
-})
+server.listen().then(({ url }: any) => {
+  console.log(`🚀  Server ready at ${url}`);
+});
