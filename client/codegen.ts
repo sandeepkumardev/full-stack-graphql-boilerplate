@@ -1,8 +1,8 @@
 import * as dotenv from "dotenv";
-dotenv.config({ path: "../.env" });
+dotenv.config({ path: ".env" });
 
 module.exports = {
-  schema: process.env.API_URL,
+  schema: process.env.REACT_APP_API_URL,
   documents: ["./src/api/*.graphql"],
   overwrite: true,
   generates: {
