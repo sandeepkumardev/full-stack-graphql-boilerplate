@@ -35,7 +35,7 @@ full-stack-graphql-boilerplate/
 
 ## Dependencies
 
-List the main dependencies for both the frontend and backend. Include versions to ensure compatibility.
+Main dependencies
 
 ### Frontend Dependencies
 
